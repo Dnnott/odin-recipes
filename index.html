@@ -7,8 +7,30 @@
     <title>Odin Recipes</title>
 </head>
 <body>
+    <script>
+       function add7(num) {
+            console.log(num + 7)
+        }
+        function multiply(num,num2) {
+            console.log(num*num2)
+        }
+        function capitalize(frase) {
+           console.log(frase.chartAt(0).toUpperCase() + frase.slice(1);
+        }
+        function lastLetter(frase) {
+           let fraseSize = frase.lenght
+           console.log(frase[fraseSize]);
+        }
+      </script>
+    
+      <input id="add7button" type="button" value="add7" onclick="add7();" />
+      <input id="multiplybutton" type="button" value="multiply" onclick="multiply();" />
+      <input id="capitalizebutton" type="button" value="capitalize" onclick="capitalize();" />
+      <input id="lastLetterbutton" type="button" value="lastLetter" onclick="lastLetter();" />
+
     <h1>Odin Recipes</h1>
-    <a id = "Lasagna" href = "recipes/lasagna.html" target = "_blank"">Recipe Lasagna</a>
+    <a id = "Lasagna" href = "recipes/lasagna.html" target = "_blank""> Recipe Lasagna </a>    
+
     
 </body>
 </html>
