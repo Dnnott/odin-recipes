@@ -7,27 +7,25 @@
     <title>Odin Recipes</title>
 </head>
 <body>
+    <div class="container-fluid">
+        <input type="text" name="number1" id="number1"> <br>
+        
+        <input type="text" name="number2" id="number2"><br>
+        <button type="button" onclick="submit1()">submit</button><br>
+
+        <p id="result"></p>
+    </div>
+    
     <script>
-       function add7() {
-            const num = parseInt(prompt('Enter number '));
-            console.log(num + 7)
+        function submit1(){
+            var a =  document.getElementById("number1").value;
+            var b =  document.getElementById("number2").value;
+            var c = parseInt(a) + parseInt(b); 
+
+            document.getElementById("result").innerHTML="Sum of number is:" + c;
         }
-        function multiply(num,num2) {
-            console.log(num*num2)
-        }
-        function capitalize(frase) {
-           console.log(frase.chartAt(0).toUpperCase() + frase.slice(1);
-        }
-        function lastLetter(frase) {
-           let fraseSize = frase.lenght
-           console.log(frase[fraseSize]);
-        }
-      </script>
+    </script>
       
-      <input id="add7button" type="button" value="add7" onclick="add7();" />
-      <input id="multiplybutton" type="button" value="multiply" onclick="multiply();" />
-      <input id="capitalizebutton" type="button" value="capitalize" onclick="capitalize();" />
-      <input id="lastLetterbutton" type="button" value="lastLetter" onclick="lastLetter();" />
 
     <h1>Odin Recipes</h1>
     <a id = "Lasagna" href = "recipes/lasagna.html" target = "_blank""> Recipe Lasagna </a>    
